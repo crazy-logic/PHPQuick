@@ -18,6 +18,7 @@ function PHPQuickTable($table,$cols,$query,$order,$limit)
 	
 	//lets get the feild names
 	$feilds = [];
+	$i=0;
 	while ($i < mysqli_num_fields($result))
 		{
 		 //$f = mysql_fetch_field($result, $i);
