@@ -1,4 +1,5 @@
 <?php
+//This file needs alot of work. 
 
 //generates a table using the following 
 //PHPQuickTable($table,$cols,$query,$order,$limit)
