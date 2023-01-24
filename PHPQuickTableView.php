@@ -1,5 +1,9 @@
 <?php
-//new version for Jan 2023 
+// new version for Jan 2023 
+// this file allows you to quickly add a list of tables and then links to a view of each tables data. 
+// it uses GET variables to pass through which table. 
+// minimal effort escaping so not safe for production. 
+
 //example of one way to include this. 
 /*
 if(isset($_GET['page']) && $_GET['page']=='tableview')
@@ -10,8 +14,6 @@ if(isset($_GET['page']) && $_GET['page']=='tableview')
 
 */
 
-
-//main entry point 
 //$conn is the MySQL connection to use 
 //$uri is the string to prepend hyperlinks. 
 function PHPQuickTableView($conn,$uri)
@@ -66,6 +68,5 @@ function showtableview($conn,$uri,$table)
 	{echo "<tr><td colspan=".sizeof($fields)." align='center'> No results found. </td></tr>";}
 	echo "</table>";
 }
-
 
 ?>
