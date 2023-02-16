@@ -11,10 +11,9 @@ function PHPQuickUploadForm()
 		<body>
 		
 		<form action='PHPQuickUpload.php' method='POST' enctype='multipart/form-data'>
-		<input type='hidden' name='MAX_FILE_SIZE' value='1024'/> 
-		  Select image to upload:
+		  Select file to upload:
 		  <input type='file' name='file' id='file'>
-		  <input type='submit' value='Upload Image' name='submit_file'>
+		  <input type='submit' value='Upload file' name='submit_file'>
 		</form>
 		
 		<p>Max is: $msize</p>
